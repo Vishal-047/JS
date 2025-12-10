@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            font-size: 20px;
+        }
+        div{
+            background-color: #f37878;
+            padding: 20px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-weight: bold;
+            width: 300px;
+            margin: 0 auto;
+        }
+        button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input{
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 8px;
+        }
+        h1{
+            text-align: center;
+            color: #333;
+            background-color: #4CAF50;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        #resetBtn, #Btn{
+            border: 1.8px solid black;
+            border-radius: 20px;
+        }
+        body{
+            background-color: aqua;
+        }
+        </style>
+    <form>
+        <h1>Guess the Number Game</h1>
+        <div>
+            Enter the guessed number<input type="number" id="guess" name="guess" min="1" max="100" class="input">
+            <button type="submit" id="Btn">Submit</button>
+            <p id ="result"></p>
+            <p id="g"></p>
+            <p>Number of Guesses left: <span id="guessesLeft">10</span></p>
+            <button type="button" id="resetBtn">Reset Game</button>
+        </div>
+    </form>
+    <script src="4_guss.js"></script>
+</body>
+</html>
